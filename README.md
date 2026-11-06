@@ -1,4 +1,4 @@
-# RavenStack-Customer-Churn-Analysis
+# RavenStack Customer Churn Analysis
 
 ## Interactive Dashboard
 
