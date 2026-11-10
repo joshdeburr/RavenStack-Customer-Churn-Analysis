@@ -104,3 +104,13 @@ The project followed several stages:
 This project demonstrates an end-to-end data analysis workflow using SQL, Python, and Tableau.
 
 By combining multiple related datasets, I explored customer retention, subscription performance, product usage, support interactions, and recorded refunds. The resulting dashboard provides an interactive overview of the findings and highlights areas that could warrant further investigation.
+
+## Project Files
+
+- [`data/`](data/) – Original CSV datasets used for the analysis.
+- [`sql/`](sql/) – MySQL queries used for data exploration and analysis.
+- [`python/churn_analysis.py`](python/churn_analysis.py) – Python analysis script.
+- [`visuals/`](visuals/) – Supporting charts generated during the analysis.
+- [`ravenstack-dashboard.png`](ravenstack-dashboard.png) – Tableau dashboard preview.
+
+
