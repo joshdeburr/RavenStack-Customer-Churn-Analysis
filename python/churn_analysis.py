@@ -4,7 +4,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Update this path to your folder containing the CSV files.
-DATA_DIR = Path(r"C:\Users\Josh\OneDrive\Documents\ravenstack")
+PROJECT_DIR = Path(__file__).resolve().parent.parent
+
+DATA_DIR = PROJECT_DIR / "data"
+OUTPUT_DIR = PROJECT_DIR / "visuals"
 
 accounts = pd.read_csv(DATA_DIR / "ravenstack_accounts.csv")
 subscriptions = pd.read_csv(DATA_DIR / "ravenstack_subscriptions.csv")
@@ -82,7 +85,6 @@ plt.xticks(rotation=25, ha="right")
 plt.tight_layout()
 
 # Save the chart to the visuals folder
-OUTPUT_DIR = Path(__file__).resolve().parent.parent / "visuals"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 plt.savefig(
